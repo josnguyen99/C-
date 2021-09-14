@@ -1,13 +1,10 @@
-#include<iostream> 
-#include<string.h>
+﻿#include <stdio.h>
+#include <math.h>
+#include <iostream>
 using namespace std;
-
-int main()
-{
-
-    char a;
-    cout << " Nhap 1 ki tu   : ";
-    cin >> a;
+ char a;
+void ChuyenDoi() {
+   
     if ((a >= 'a') && (a <= 'z'))
     {
         int k = int(a) - 32;
@@ -19,6 +16,12 @@ int main()
         cout << " Ky tu thuong tuong ung voi " << a << " la  : " << char(k);
     }
     else cout << " number  " << a;
+}
+int main()
+{
+    cout << " Nhap 1 ki tu   : ";
+    cin >> a;
+    ChuyenDoi();
     cout << endl;
     system("pause");
     return 0;
